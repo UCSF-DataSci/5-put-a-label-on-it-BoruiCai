@@ -13,9 +13,9 @@ In this section, provide your interpretation of the Logistic Regression model's 
 - How much did the class imbalance affect the results?
 - What does the confusion matrix tell you about the model's predictions?
 
-The best performing metric is AUC(0.908),This shows the model is good at predict between positive and negative case.
-The worst performing metric is Recall(0.301),could be model missed many true disease cases.
-class imbalance affect the results a lot,the low recall indicates the model is biased
+The best performing metric is AUC(0.908), This shows the model is good at predicting between positive and negative cases.
+The worst performing metric is Recall(0.301),could be the model missed many true disease cases.
+The imbalance_impact_score: 0.56, which affects the results a lot, the low recall indicates the model is biased
 The model rarely predicts false positives but frequently misses actual positive cases
 
 
@@ -51,7 +51,7 @@ However, precision dropped by 55.24%, and AUC slightly decreased by 3.30%. Accur
 
 SMOTE generates synthetic samples for the minority class, allowing the model to learn more effectively how to detect positive cases, thus improving recall. However, this also leads to more false positives, which reduces both precision and overall accuracy.
 
-In the healthcare domain, where missing positive cases can have serious consequences, addressing class imbalance is critical. Although metrics like precision and accuracy may decline, the gain in recall is often more meaningful—especially when it comes to early disease detection.
+In the healthcare domain, where missing positive cases can have serious consequences, addressing class imbalance is critical. Although metrics like precision and accuracy may decline, the gain in recall is often more meaningful, especially when it comes to early disease detection.
 
 ## Overall Conclusions
 
